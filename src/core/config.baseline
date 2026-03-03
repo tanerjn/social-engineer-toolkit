@@ -30,7 +30,7 @@
 ##################################################################################################
 #
 ### Define the path to Metasploit. For example: /opt/metasploit/apps/pro/msf3
-METASPLOIT_PATH=/opt/metasploit/apps/pro/msf3
+METASPLOIT_PATH=/opt/metasploit-framework/bin/msfconsole
 #
 ### This will tell what database to use when using Metasploit. The default is PostgreSQL.
 METASPLOIT_DATABASE=postgresql

@@ -362,6 +362,12 @@ def meta_path():
                 msf_path = "/opt/metasploit-framework/"
                 trigger = 1
 
+        # specific for macos
+        if os.path.isfile("/opt/metasploit-framework/bin/msfconsole"):
+            if trigger == 0:
+                msf_path = "/opt/metasploit-framework/bin"
+                trigger = 1
+
         # specific for kali linux
         if os.path.isfile("/opt/metasploit/apps/pro/msf3/msfconsole"):
             # left blank since you can call launcher and ruby1.9 - 2x issues
