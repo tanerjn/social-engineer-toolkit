@@ -365,7 +365,7 @@ def meta_path():
         # specific for macos
         if os.path.isfile("/opt/metasploit-framework/bin/msfconsole"):
             if trigger == 0:
-                msf_path = "/opt/metasploit-framework/bin"
+                msf_path = "/opt/metasploit-framework/bin/"
                 trigger = 1
 
         # specific for kali linux
